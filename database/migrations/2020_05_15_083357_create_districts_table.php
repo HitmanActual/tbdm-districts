@@ -19,6 +19,7 @@ class CreateDistrictsTable extends Migration
             $table->string('district_name');
             $table->string('district_name_en');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
